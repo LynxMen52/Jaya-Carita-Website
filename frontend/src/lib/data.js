@@ -27,11 +27,15 @@ export const HOT_AREAS = [
     "Cemagi",
 ];
 
+export const MAIN_SITE_URL = "https://jcbaliproperty.com/";
+export const ALL_LISTINGS_URL = "https://jcbaliproperty.com/property-status/";
+
 export const LISTINGS = [
     {
         id: "saba",
         title: "Exquisite 3BR Seaside Sanctuary",
         location: "Saba Beach, Bali",
+        url: "https://jcbaliproperty.com/property/exquisite-3br-seaside-sanctuary-in-saba-beach-bali/",
         image: "https://images.unsplash.com/photo-1664918706173-6349ca225dd0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxiYWxpJTIwdWx1d2F0dSUyMG9jZWFufGVufDB8fHx8MTc4MTQ5MzAxMnww&ixlib=rb-4.1.0&q=85",
         specs: ["2,335 m²", "3 Beds", "3 Baths"],
         status: "Villa For Sale",
@@ -42,6 +46,7 @@ export const LISTINGS = [
         id: "cemagi",
         title: "Rice Field Sanctuary — Modern 2BR Villa",
         location: "Cemagi, Bali",
+        url: "https://jcbaliproperty.com/property/rice-field-sanctuary-modern-2br-villa-in-cemagi/",
         image: "https://images.unsplash.com/photo-1569881347427-c861051db3f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxiYWxpJTIwcmljZSUyMGZpZWxkJTIwdmlsbGF8ZW58MHx8fHwxNzgxNDkzMDEyfDA&ixlib=rb-4.1.0&q=85",
         specs: ["140 m²", "2 Beds", "3 Baths"],
         status: "Villa For Lease",
@@ -50,6 +55,7 @@ export const LISTINGS = [
         id: "ungasan",
         title: "Hilltop Haven — 2BR Villa",
         location: "Ungasan, Bali",
+        url: "https://jcbaliproperty.com/property/2br-hilltop-haven-in-ungasan/",
         image: "https://images.unsplash.com/photo-1651108066220-f61c22fc281f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBiYWxpJTIwdmlsbGElMjBwb29sfGVufDB8fHx8MTc4MTQ5MzAxMnww&ixlib=rb-4.1.0&q=85",
         specs: ["130 m²", "2 Beds", "2 Baths"],
         status: "Villa For Lease",
@@ -58,6 +64,7 @@ export const LISTINGS = [
         id: "ubud",
         title: "Riverside Land in Petulu",
         location: "Ubud, Bali",
+        url: "https://jcbaliproperty.com/property/riverside-land-for-lease-in-petulu-ubud/",
         image: "https://images.unsplash.com/photo-1654703943019-e519711ea124?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwzfHxiYWxpJTIwcmljZSUyMGZpZWxkJTIwdmlsbGF8ZW58MHx8fHwxNzgxNDkzMDEyfDA&ixlib=rb-4.1.0&q=85",
         specs: ["900 m²"],
         status: "Land For Lease",
@@ -66,6 +73,7 @@ export const LISTINGS = [
         id: "kerambitan",
         title: "Strategic Land — Investment Plot",
         location: "Kerambitan, Tabanan",
+        url: "https://jcbaliproperty.com/property/strategic-land-for-sale-in-kerambitan-great-investment-opportunity/",
         image: "https://images.unsplash.com/photo-1721222204632-bf9abe6f023f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBiYWxpJTIwdmlsbGElMjBwb29sfGVufDB8fHx8MTc4MTQ5MzAxMnww&ixlib=rb-4.1.0&q=85",
         specs: ["6,500 m²"],
         status: "Land For Sale",

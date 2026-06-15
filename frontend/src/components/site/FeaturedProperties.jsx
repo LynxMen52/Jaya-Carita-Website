@@ -1,5 +1,5 @@
-import { ArrowUpRight, BedDouble, Bath, Maximize2 } from "lucide-react";
-import { LISTINGS, waLink } from "@/lib/data";
+import { ArrowUpRight, BedDouble, Bath, Maximize2, ArrowRight } from "lucide-react";
+import { LISTINGS, ALL_LISTINGS_URL } from "@/lib/data";
 
 export default function FeaturedProperties() {
     return (
@@ -44,6 +44,26 @@ export default function FeaturedProperties() {
                         />
                     ))}
                 </div>
+
+                {/* View all listings CTA */}
+                <div className="mt-16 md:mt-20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-brand-line pt-10">
+                    <p className="text-brand-muted font-light text-base max-w-md">
+                        Browse our complete portfolio — hundreds of villas and land plots updated weekly.
+                    </p>
+                    <a
+                        data-testid="view-all-listings-cta"
+                        href={ALL_LISTINGS_URL}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="group inline-flex items-center gap-3 bg-brand-olive text-brand-bg px-7 py-4 text-[11px] uppercase tracking-[0.24em] hover:bg-brand-olive-hover transition-colors duration-500"
+                    >
+                        View Full Listings
+                        <ArrowRight
+                            size={16}
+                            className="transition-transform duration-500 group-hover:translate-x-1"
+                        />
+                    </a>
+                </div>
             </div>
         </section>
     );
@@ -53,7 +73,7 @@ function ListingCard({ p, className = "", featured = false }) {
     return (
         <a
             data-testid={`listing-card-${p.id}`}
-            href={waLink(`Hi Jaya Carita, I'd like more details about: ${p.title} (${p.location}).`)}
+            href={p.url}
             target="_blank"
             rel="noreferrer"
             className={`group relative overflow-hidden bg-brand-sand block ${className}`}
@@ -101,7 +121,7 @@ function ListingCard({ p, className = "", featured = false }) {
                 </div>
 
                 <div className="mt-5 flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-brand-bg group-hover:text-brand-terracotta transition-colors duration-500">
-                    Inquire on WhatsApp
+                    View on JC Bali Property
                     <ArrowUpRight
                         size={14}
                         className="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
