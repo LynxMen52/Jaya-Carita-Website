@@ -81,6 +81,7 @@ export default function Footer() {
                         <FooterLink href="#properties" testid="footer-nav-properties">Properties</FooterLink>
                         <FooterLink href="#services" testid="footer-nav-services">Services</FooterLink>
                         <FooterLink href="#areas" testid="footer-nav-areas">Areas</FooterLink>
+                        <FooterLink href="/insights" testid="footer-nav-insights">Insights</FooterLink>
                         <FooterLink href="#about" testid="footer-nav-about">About</FooterLink>
                         <FooterLink href="#faq" testid="footer-nav-faq">FAQ</FooterLink>
                     </div>

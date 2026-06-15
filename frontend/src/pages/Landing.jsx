@@ -7,6 +7,7 @@ import HotAreasGrid from "@/components/site/HotAreasGrid";
 import About from "@/components/site/About";
 import Testimonials from "@/components/site/Testimonials";
 import FAQ from "@/components/site/FAQ";
+import InsightsPreview from "@/components/site/InsightsPreview";
 import ContactCTAs from "@/components/site/ContactForm";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
@@ -22,6 +23,7 @@ export default function Landing() {
             <HotAreasGrid />
             <About />
             <Testimonials />
+            <InsightsPreview />
             <FAQ />
             <ContactCTAs />
             <Footer />
