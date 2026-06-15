@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import { waLink, WHATSAPP_DISPLAY } from "@/lib/data";
 
 const NAV = [
-    { label: "Properties", href: "#properties" },
-    { label: "Services", href: "#services" },
-    { label: "Areas", href: "#areas" },
-    { label: "About", href: "#about" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Properties", href: "/#properties" },
+    { label: "Services", href: "/#services" },
+    { label: "Areas", href: "/#areas" },
+    { label: "About", href: "/#about" },
+    { label: "FAQ", href: "/#faq" },
 ];
 
 export default function Header() {
@@ -32,7 +32,7 @@ export default function Header() {
         >
             <div className="mx-auto max-w-[1400px] px-6 md:px-10 lg:px-16 flex items-center justify-between h-20">
                 <a
-                    href="#top"
+                    href="/"
                     data-testid="logo-link"
                     className="flex items-baseline gap-2 group"
                 >

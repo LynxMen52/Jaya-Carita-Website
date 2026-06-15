@@ -1,4 +1,5 @@
 import { Home, KeyRound, Scale, Stamp, Building2, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { SERVICES, waLink } from "@/lib/data";
 
 const ICONS = { Home, KeyRound, Scale, Stamp, Building2 };
@@ -35,17 +36,12 @@ export default function Services() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-brand-line border border-brand-line">
                     {SERVICES.map((s, i) => {
                         const Icon = ICONS[s.icon] || Home;
-                        return (
-                            <a
-                                key={s.id}
-                                href={waLink(`Hi Jaya Carita, I'd like to learn about your ${s.title}.`)}
-                                target="_blank"
-                                rel="noreferrer"
-                                data-testid={`service-card-${s.id}`}
-                                className={`group relative bg-brand-bg p-8 md:p-10 lg:p-12 hover:bg-brand-olive transition-colors duration-500 min-h-[280px] flex flex-col justify-between ${
-                                    i === 0 ? "lg:col-span-2" : ""
-                                }`}
-                            >
+                        const isInternal = s.href && s.href.startsWith("/");
+                        const sharedClass = `group relative bg-brand-bg p-8 md:p-10 lg:p-12 hover:bg-brand-olive transition-colors duration-500 min-h-[280px] flex flex-col justify-between ${
+                            i === 0 ? "lg:col-span-2" : ""
+                        }`;
+                        const inner = (
+                            <>
                                 <div className="flex items-start justify-between">
                                     <Icon
                                         size={36}
@@ -64,7 +60,34 @@ export default function Services() {
                                     <p className="text-brand-muted group-hover:text-brand-bg/80 transition-colors duration-500 text-sm md:text-base leading-relaxed font-light max-w-md">
                                         {s.copy}
                                     </p>
+                                    {isInternal && (
+                                        <span className="mt-5 inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.24em] text-brand-terracotta group-hover:text-brand-bg transition-colors duration-500">
+                                            Explore services →
+                                        </span>
+                                    )}
                                 </div>
+                            </>
+                        );
+
+                        return isInternal ? (
+                            <Link
+                                key={s.id}
+                                to={s.href}
+                                data-testid={`service-card-${s.id}`}
+                                className={sharedClass}
+                            >
+                                {inner}
+                            </Link>
+                        ) : (
+                            <a
+                                key={s.id}
+                                href={waLink(`Hi Jaya Carita, I'd like to learn about your ${s.title}.`)}
+                                target="_blank"
+                                rel="noreferrer"
+                                data-testid={`service-card-${s.id}`}
+                                className={sharedClass}
+                            >
+                                {inner}
                             </a>
                         );
                     })}

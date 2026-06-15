@@ -86,32 +86,140 @@ export const SERVICES = [
         title: "Property Sales",
         icon: "Home",
         copy: "Curated villas, beachfront estates, and high-yield land — sourced through trusted owners across Bali.",
+        href: "whatsapp",
     },
     {
         id: "rentals",
         title: "Property Rentals",
         icon: "KeyRound",
         copy: "Long-stay leaseholds and seasonal rentals with transparent terms and full due diligence.",
+        href: "whatsapp",
     },
     {
         id: "legal",
         title: "Legal Services",
         icon: "Scale",
         copy: "Notary partnerships, due diligence, contracts, and foreign-ownership compliance — handled end to end.",
+        href: "/services/legal",
     },
     {
         id: "visa",
         title: "Visa Services",
         icon: "Stamp",
         copy: "KITAS, investor, retirement, and business visas. Stay legally — focus on building your life in Bali.",
+        href: "/services/visa",
     },
     {
         id: "management",
         title: "Property Management",
         icon: "Building2",
         copy: "Bookings, maintenance, staffing, and revenue optimization for owners who live abroad.",
+        href: "whatsapp",
     },
 ];
+
+export const SERVICE_DETAILS = {
+    legal: {
+        title: "Legal Services",
+        eyebrow: "Compliance & contracts",
+        intro:
+            "Every villa, every land plot, every signature — protected. Our partnered notaries and Bali-based legal team handle the full paperwork stack, in English, on your timeline.",
+        items: [
+            {
+                title: "PT PMA Establishment",
+                description:
+                    "Set up your foreign-owned Indonesian company — the legal vehicle for villa investments, businesses, and long-term ownership.",
+                icon: "Building2",
+            },
+            {
+                title: "Legal Assistance & Notary",
+                description:
+                    "Sale & purchase agreements (PPJB/AJB), title verification, sworn translations, and full notary coordination on every transaction.",
+                icon: "ScrollText",
+            },
+            {
+                title: "PBG / SLF Permits",
+                description:
+                    "Building approval (PBG) and certificate of feasibility (SLF) — the modern replacement for IMB. Required for any new build, renovation, or rental license.",
+                icon: "FileCheck2",
+            },
+            {
+                title: "Due Diligence & Title Check",
+                description:
+                    "Zoning verification (zona hijau/kuning/merah), encumbrance search, tax clearance, and ownership history — completed before you transfer a single rupiah.",
+                icon: "ShieldCheck",
+            },
+            {
+                title: "Lease & Freehold Contracts",
+                description:
+                    "Bilingual leasehold (Hak Sewa) and freehold (Hak Milik via nominee/PMA) contracts drafted to international standards with arbitration clauses.",
+                icon: "Handshake",
+            },
+            {
+                title: "Tax Advisory & Reporting",
+                description:
+                    "BPHTB, PPN, withholding tax, and annual reporting for foreign owners and PMA entities — kept clean from day one.",
+                icon: "Receipt",
+            },
+        ],
+    },
+    visa: {
+        title: "Visa Services",
+        eyebrow: "Stay legally, live freely",
+        intro:
+            "From a two-week holiday to a ten-year retirement — we match you to the right visa, handle the application, and keep you compliant year after year.",
+        items: [
+            {
+                title: "Tourist Visa (VOA / B1)",
+                description:
+                    "Visa-on-arrival and B1 single-entry tourist visas — extendable up to 60 days. The simplest way to scout properties on your first visit.",
+                icon: "Plane",
+            },
+            {
+                title: "Golden Visa (5 & 10 Years)",
+                description:
+                    "Indonesia's investor residency — 5 or 10 years stay with no sponsor required. Open to individuals investing USD 350K+ or company directors.",
+                icon: "Crown",
+            },
+            {
+                title: "Digital Nomad / Remote Worker",
+                description:
+                    "Long-stay options for remote professionals earning income from outside Indonesia — including E33G and B211A multi-entry pathways.",
+                icon: "Laptop",
+            },
+            {
+                title: "KITAS — Investor",
+                description:
+                    "Two-year limited stay permit tied to your PT PMA. Includes multiple-entry, dependent visas, and pathway to KITAP (permanent).",
+                icon: "Stamp",
+            },
+            {
+                title: "KITAS — Retirement (55+)",
+                description:
+                    "One-year renewable retirement KITAS for applicants 55 and over. Includes housing, domestic helper, and driver allowances.",
+                icon: "PalmtreeIcon",
+            },
+            {
+                title: "KITAS — Work & Business (B211A)",
+                description:
+                    "Single or multi-entry business visas for professionals, consultants, and project workers. Renewable, with conversion paths to investor KITAS.",
+                icon: "Briefcase",
+            },
+            {
+                title: "KITAP — Permanent Stay",
+                description:
+                    "Five-year permanent residency for long-term KITAS holders and spouses of Indonesian citizens. Includes work rights and local pricing benefits.",
+                icon: "Key",
+            },
+            {
+                title: "Visa Extensions & Renewals",
+                description:
+                    "We track expiries, file extensions ahead of deadline, and handle annual MERP renewals so you never lapse on status.",
+                icon: "RefreshCcw",
+            },
+        ],
+    },
+};
 
 export const AREAS = [
     { name: "Uluwatu", note: "Clifftop ocean views", image: "https://images.unsplash.com/photo-1664918706173-6349ca225dd0?w=800&q=80&auto=format&fit=crop" },
