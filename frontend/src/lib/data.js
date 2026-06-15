@@ -118,6 +118,13 @@ export const SERVICES = [
         copy: "Bookings, maintenance, staffing, and revenue optimization for owners who live abroad.",
         href: "whatsapp",
     },
+    {
+        id: "contractor",
+        title: "Contractor Consultant",
+        icon: "HardHat",
+        copy: "From architect briefing to handover — we vet contractors, review BOQs, supervise builds, and protect your timeline and budget.",
+        href: "whatsapp",
+    },
 ];
 
 export const SERVICE_DETAILS = {

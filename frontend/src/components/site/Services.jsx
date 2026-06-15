@@ -1,8 +1,8 @@
-import { Home, KeyRound, Scale, Stamp, Building2, ArrowUpRight } from "lucide-react";
+import { Home, KeyRound, Scale, Stamp, Building2, HardHat, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SERVICES, waLink } from "@/lib/data";
 
-const ICONS = { Home, KeyRound, Scale, Stamp, Building2 };
+const ICONS = { Home, KeyRound, Scale, Stamp, Building2, HardHat };
 
 export default function Services() {
     return (
@@ -37,9 +37,7 @@ export default function Services() {
                     {SERVICES.map((s, i) => {
                         const Icon = ICONS[s.icon] || Home;
                         const isInternal = s.href && s.href.startsWith("/");
-                        const sharedClass = `group relative bg-brand-bg p-8 md:p-10 lg:p-12 hover:bg-brand-olive transition-colors duration-500 min-h-[280px] flex flex-col justify-between ${
-                            i === 0 ? "lg:col-span-2" : ""
-                        }`;
+                        const sharedClass = `group relative bg-brand-bg p-8 md:p-10 lg:p-12 hover:bg-brand-olive transition-colors duration-500 min-h-[280px] flex flex-col justify-between`;
                         const inner = (
                             <>
                                 <div className="flex items-start justify-between">
