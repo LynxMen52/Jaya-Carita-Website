@@ -1,5 +1,7 @@
 // Brand & site data for Jaya Carita Bali Property
 
+export const LOGO_URL = "https://customer-assets.emergentagent.com/job_bali-property-visa/artifacts/9wbnprm5_JC%20Logo.jpeg";
+
 export const WHATSAPP_NUMBER = "6282341854239";
 export const WHATSAPP_DISPLAY = "+62 823-4185-4239";
 export const PHONE_DISPLAY = "+62 361 3616151";

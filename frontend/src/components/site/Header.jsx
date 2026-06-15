@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { waLink, WHATSAPP_DISPLAY } from "@/lib/data";
+import { waLink, WHATSAPP_DISPLAY, LOGO_URL } from "@/lib/data";
 
 const NAV = [
     { label: "Properties", href: "/#properties" },
@@ -34,13 +34,23 @@ export default function Header() {
                 <a
                     href="/"
                     data-testid="logo-link"
-                    className="flex items-baseline gap-2 group"
+                    className="flex items-center gap-3 group"
                 >
-                    <span className="font-serif text-2xl md:text-[28px] tracking-tight text-brand-olive leading-none">
-                        Jaya Carita
+                    <span className="relative shrink-0 size-11 md:size-12 rounded-full bg-white ring-1 ring-brand-line shadow-sm overflow-hidden flex items-center justify-center">
+                        <img
+                            src={LOGO_URL}
+                            alt="Jaya Carita Bali logo"
+                            className="w-full h-full object-cover"
+                            data-testid="logo-mark"
+                        />
                     </span>
-                    <span className="hidden sm:inline text-[10px] uppercase tracking-[0.28em] text-brand-terracotta font-medium translate-y-[-2px]">
-                        Bali
+                    <span className="flex items-baseline gap-2">
+                        <span className="font-serif text-xl md:text-[24px] tracking-tight text-brand-olive leading-none">
+                            Jaya Carita
+                        </span>
+                        <span className="hidden sm:inline text-[10px] uppercase tracking-[0.28em] text-brand-terracotta font-medium translate-y-[-2px]">
+                            Bali
+                        </span>
                     </span>
                 </a>
 

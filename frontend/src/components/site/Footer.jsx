@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Instagram, Facebook, Youtube, ArrowUpRight } from "lucide-react";
-import { ADDRESS, EMAIL, PHONE_DISPLAY, WHATSAPP_DISPLAY, waLink } from "@/lib/data";
+import { ADDRESS, EMAIL, PHONE_DISPLAY, WHATSAPP_DISPLAY, waLink, LOGO_URL } from "@/lib/data";
 
 export default function Footer() {
     return (
@@ -39,9 +39,19 @@ export default function Footer() {
                 {/* Lower grid */}
                 <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 pt-16">
                     <div className="lg:col-span-5">
-                        <p className="font-serif text-3xl leading-tight mb-6">
-                            Jaya Carita Bali Property
-                        </p>
+                        <div className="flex items-center gap-4 mb-6">
+                            <span className="shrink-0 size-14 rounded-full bg-white ring-1 ring-brand-bg/15 overflow-hidden flex items-center justify-center">
+                                <img
+                                    src={LOGO_URL}
+                                    alt="Jaya Carita Bali logo"
+                                    className="w-full h-full object-cover"
+                                    data-testid="footer-logo"
+                                />
+                            </span>
+                            <p className="font-serif text-3xl leading-tight">
+                                Jaya Carita Bali Property
+                            </p>
+                        </div>
                         <p className="text-brand-bg/70 font-light text-base leading-relaxed max-w-md">
                             Your truly Bali property consultant. Villas, land, legal & visa —
                             all under one trusted name.
