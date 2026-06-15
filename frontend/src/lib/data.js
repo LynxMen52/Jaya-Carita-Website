@@ -28,7 +28,7 @@ export const HOT_AREAS = [
 ];
 
 export const MAIN_SITE_URL = "https://jcbaliproperty.com/";
-export const ALL_LISTINGS_URL = "https://jcbaliproperty.com/property-status/";
+export const ALL_LISTINGS_URL = "https://jcbaliproperty.com/villa/";
 
 export const LISTINGS = [
     {
