@@ -241,6 +241,44 @@ export const AREAS = [
     { name: "Sanur", note: "Family-friendly coast", image: "https://images.unsplash.com/photo-1569881347427-c861051db3f9?w=800&q=80&auto=format&fit=crop" },
 ];
 
+export const TEAM = [
+    {
+        name: "I Made Surya",
+        role: "Founder & Principal Advisor",
+        bio: "Two decades sourcing land and villas across Bali. Personally inspects every signature listing.",
+        location: "Canggu",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80&auto=format&fit=crop",
+    },
+    {
+        name: "Putu Ayu Diah",
+        role: "Head of Legal & Notary",
+        bio: "PT PMA setups, leasehold contracts, and due diligence — keeps every deal compliant from offer to handover.",
+        location: "Denpasar",
+        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80&auto=format&fit=crop",
+    },
+    {
+        name: "Wayan Kresna",
+        role: "Visa & Immigration Specialist",
+        bio: "KITAS, Golden Visa, and KITAP pathways. Twelve years inside Indonesia's immigration framework.",
+        location: "Sanur",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80&auto=format&fit=crop",
+    },
+    {
+        name: "Kadek Putra",
+        role: "Acquisitions Lead",
+        bio: "Off-market sourcing in Pererenan, Uluwatu, and Ubud. The first call when sellers want a discreet exit.",
+        location: "Pererenan",
+        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=900&q=80&auto=format&fit=crop",
+    },
+    {
+        name: "Ni Luh Sari",
+        role: "Client Experience Director",
+        bio: "From the first WhatsApp to your KITAS in hand — coordinates every team member, every step.",
+        location: "Ubud",
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=900&q=80&auto=format&fit=crop",
+    },
+];
+
 export const TESTIMONIALS = [
     {
         quote: "Jaya Carita walked us through the entire legal process — from notary to KITAS. The villa in Pererenan was exactly as promised.",

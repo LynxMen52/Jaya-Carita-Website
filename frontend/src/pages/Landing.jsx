@@ -5,6 +5,7 @@ import FeaturedProperties from "@/components/site/FeaturedProperties";
 import Services from "@/components/site/Services";
 import HotAreasGrid from "@/components/site/HotAreasGrid";
 import About from "@/components/site/About";
+import Team from "@/components/site/Team";
 import Testimonials from "@/components/site/Testimonials";
 import FAQ from "@/components/site/FAQ";
 import InsightsPreview from "@/components/site/InsightsPreview";
@@ -12,13 +13,11 @@ import ContactCTAs from "@/components/site/ContactForm";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
 import ScrollProgress from "@/components/site/ScrollProgress";
-import CustomCursor from "@/components/site/CustomCursor";
 
 export default function Landing() {
     return (
         <main data-testid="landing-root" className="min-h-screen bg-brand-bg text-brand-ink overflow-x-hidden">
             <ScrollProgress />
-            <CustomCursor />
             <Header />
             <Hero />
             <AreasMarquee />
@@ -26,6 +25,7 @@ export default function Landing() {
             <Services />
             <HotAreasGrid />
             <About />
+            <Team />
             <Testimonials />
             <InsightsPreview />
             <FAQ />
