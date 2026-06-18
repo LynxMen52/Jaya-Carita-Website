@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { AREAS, waLink } from "@/lib/data";
 
 export default function HotAreasGrid() {
@@ -28,9 +29,17 @@ export default function HotAreasGrid() {
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-                    {AREAS.map((a) => (
-                        <a
+                    {AREAS.map((a, i) => (
+                        <motion.a
                             key={a.name}
+                            initial={{ opacity: 0, y: 30, scale: 0.96 }}
+                            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                            viewport={{ once: true, margin: "-60px" }}
+                            transition={{
+                                duration: 0.8,
+                                delay: i * 0.06,
+                                ease: [0.22, 1, 0.36, 1],
+                            }}
                             data-testid={`area-card-${a.name.toLowerCase().replace(/\s+/g, "-")}`}
                             href={waLink(`Hi Jaya Carita, I'm interested in properties in ${a.name}.`)}
                             target="_blank"
@@ -57,7 +66,7 @@ export default function HotAreasGrid() {
                                     </p>
                                 </div>
                             </div>
-                        </a>
+                        </motion.a>
                     ))}
                 </div>
             </div>

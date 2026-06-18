@@ -11,10 +11,14 @@ import InsightsPreview from "@/components/site/InsightsPreview";
 import ContactCTAs from "@/components/site/ContactForm";
 import Footer from "@/components/site/Footer";
 import WhatsAppFloat from "@/components/site/WhatsAppFloat";
+import ScrollProgress from "@/components/site/ScrollProgress";
+import CustomCursor from "@/components/site/CustomCursor";
 
 export default function Landing() {
     return (
         <main data-testid="landing-root" className="min-h-screen bg-brand-bg text-brand-ink overflow-x-hidden">
+            <ScrollProgress />
+            <CustomCursor />
             <Header />
             <Hero />
             <AreasMarquee />

@@ -17,6 +17,16 @@ body {
     color: #1A1D1A;
 }
 
+/* Hide default cursor on desktop (custom cursor takes over) */
+@media (hover: hover) and (pointer: fine) {
+    html, body {
+        cursor: none;
+    }
+    a, button, input, textarea, select, label, [role="button"] {
+        cursor: none;
+    }
+}
+
 .font-serif {
     font-family: 'Cormorant Garamond', Georgia, serif;
 }

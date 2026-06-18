@@ -8,14 +8,17 @@ export default function WhatsAppFloat() {
             target="_blank"
             rel="noreferrer"
             aria-label="Chat on WhatsApp"
-            className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-[0_20px_40px_-10px_rgba(37,211,102,0.6)] hover:scale-110 transition-transform duration-300 flex items-center justify-center"
+            className="group fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-[0_20px_40px_-10px_rgba(37,211,102,0.6)] hover:scale-110 transition-transform duration-300 flex items-center justify-center"
         >
+            <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping" aria-hidden />
+            <span className="absolute inset-0 rounded-full bg-[#25D366]" aria-hidden />
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
                 width="26"
                 height="26"
                 fill="currentColor"
+                className="relative z-10"
                 aria-hidden
             >
                 <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977.873 2.78 1.025 2.035 2.21 3.834 4.146 5.082 1.064.688 2.477 1.435 3.642 1.65.515.085 1.045.13 1.575.13.93 0 1.836-.234 2.464-1.05.327-.42.4-.954.4-1.475 0-.27-.107-.485-.41-.658-.39-.225-1.49-.74-1.85-.86z" />

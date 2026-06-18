@@ -1,5 +1,7 @@
 import { ArrowUpRight, BedDouble, Bath, Maximize2, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { LISTINGS, ALL_LISTINGS_URL } from "@/lib/data";
+import Reveal, { RevealLines } from "./Reveal";
 
 export default function FeaturedProperties() {
     return (
@@ -32,16 +34,20 @@ export default function FeaturedProperties() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 auto-rows-[280px] md:auto-rows-[320px] lg:auto-rows-[280px]">
                     {LISTINGS.map((p, idx) => (
-                        <ListingCard
+                        <motion.div
                             key={p.id}
-                            p={p}
-                            className={
-                                idx === 0
-                                    ? "md:col-span-2 lg:col-span-2 lg:row-span-2"
-                                    : ""
-                            }
-                            featured={idx === 0}
-                        />
+                            initial={{ opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }}
+                            whileInView={{ opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)" }}
+                            viewport={{ once: true, margin: "-60px" }}
+                            transition={{
+                                duration: 1.1,
+                                delay: idx * 0.12,
+                                ease: [0.22, 1, 0.36, 1],
+                            }}
+                            className={idx === 0 ? "md:col-span-2 lg:col-span-2 lg:row-span-2" : ""}
+                        >
+                            <ListingCard p={p} featured={idx === 0} />
+                        </motion.div>
                     ))}
                 </div>
 
@@ -76,7 +82,7 @@ function ListingCard({ p, className = "", featured = false }) {
             href={p.url}
             target="_blank"
             rel="noreferrer"
-            className={`group relative overflow-hidden bg-brand-sand block ${className}`}
+            className={`group relative overflow-hidden bg-brand-sand block h-full w-full ${className}`}
         >
             <img
                 src={p.image}

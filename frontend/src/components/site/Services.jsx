@@ -1,4 +1,5 @@
 import { Home, KeyRound, Scale, Stamp, Building2, HardHat, ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { SERVICES, waLink } from "@/lib/data";
 
@@ -37,21 +38,32 @@ export default function Services() {
                     {SERVICES.map((s, i) => {
                         const Icon = ICONS[s.icon] || Home;
                         const isInternal = s.href && s.href.startsWith("/");
-                        const sharedClass = `group relative bg-brand-bg p-8 md:p-10 lg:p-12 hover:bg-brand-olive transition-colors duration-500 min-h-[280px] flex flex-col justify-between`;
+                        const sharedClass = `group relative bg-brand-bg p-8 md:p-10 lg:p-12 hover:bg-brand-olive transition-colors duration-500 min-h-[280px] flex flex-col justify-between overflow-hidden`;
                         const inner = (
                             <>
-                                <div className="flex items-start justify-between">
-                                    <Icon
-                                        size={36}
-                                        strokeWidth={1.2}
-                                        className="text-brand-olive group-hover:text-brand-bg transition-colors duration-500"
-                                    />
+                                <motion.span
+                                    initial={{ opacity: 0 }}
+                                    whileHover={{ opacity: 1 }}
+                                    className="absolute inset-0 pointer-events-none"
+                                    aria-hidden
+                                />
+                                <div className="flex items-start justify-between relative z-10">
+                                    <motion.div
+                                        whileHover={{ rotate: -8, scale: 1.1 }}
+                                        transition={{ type: "spring", stiffness: 200, damping: 12 }}
+                                    >
+                                        <Icon
+                                            size={36}
+                                            strokeWidth={1.2}
+                                            className="text-brand-olive group-hover:text-brand-bg transition-colors duration-500"
+                                        />
+                                    </motion.div>
                                     <ArrowUpRight
                                         size={18}
                                         className="text-brand-muted group-hover:text-brand-terracotta transition-all duration-500 group-hover:translate-x-1 group-hover:-translate-y-1"
                                     />
                                 </div>
-                                <div>
+                                <div className="relative z-10">
                                     <h3 className="font-serif text-2xl md:text-3xl text-brand-olive group-hover:text-brand-bg transition-colors duration-500 mb-3">
                                         {s.title}
                                     </h3>
@@ -67,18 +79,13 @@ export default function Services() {
                             </>
                         );
 
-                        return isInternal ? (
-                            <Link
-                                key={s.id}
-                                to={s.href}
-                                data-testid={`service-card-${s.id}`}
-                                className={sharedClass}
-                            >
+                        const Wrapper = motion.div;
+                        const card = isInternal ? (
+                            <Link to={s.href} data-testid={`service-card-${s.id}`} className={sharedClass}>
                                 {inner}
                             </Link>
                         ) : (
                             <a
-                                key={s.id}
                                 href={waLink(`Hi Jaya Carita, I'd like to learn about your ${s.title}.`)}
                                 target="_blank"
                                 rel="noreferrer"
@@ -87,6 +94,23 @@ export default function Services() {
                             >
                                 {inner}
                             </a>
+                        );
+
+                        return (
+                            <Wrapper
+                                key={s.id}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-60px" }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: i * 0.08,
+                                    ease: [0.22, 1, 0.36, 1],
+                                }}
+                                className="contents"
+                            >
+                                {card}
+                            </Wrapper>
                         );
                     })}
                 </div>
