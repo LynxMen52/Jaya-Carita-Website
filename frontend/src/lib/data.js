@@ -247,7 +247,7 @@ export const TEAM = [
         role: "Founder & Director",
         bio: "Two decades sourcing land and villas across Bali. Personally inspects every signature listing.",
         location: "Canggu",
-        image: "https://res.cloudinary.com/dosi6byip/image/upload/f_auto,q_auto/Bali_gjaqsz",
+        image: "https:/​/​res.cloudinary.com/​dosi6byip/​image/​upload/​ar_9:16,​c_auto/​e_contrast:level_-12;type_sigmoidal/​e_brightness:-2/​e_gamma:17/​f_auto/​q_auto/​Pak_Wayan_z9bybo.jpg",
     },
     {
         name: "Ni Rai Ratih",
