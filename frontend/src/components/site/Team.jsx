@@ -20,7 +20,7 @@ export default function Team() {
                             The team
                         </p>
                         <h2 className="font-serif font-light text-brand-olive text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.02]">
-                            Five people behind
+                            Six people behind
                             <br />
                             <span className="italic">every signature.</span>
                         </h2>
