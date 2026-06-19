@@ -23,14 +23,14 @@ export default function InsightsPreview() {
                             <span className="italic">you invest.</span>
                         </h2>
                     </div>
-                    <Link
-                        to="/insights"
+                    <a
+                        href="#insights"
                         data-testid="insights-view-all"
-                        className="inline-flex items-center gap-3 border-b border-brand-olive text-brand-olive pb-1 text-[11px] uppercase tracking-[0.24em] hover:text-brand-terracotta hover:border-brand-terracotta transition-colors duration-500"
+                          className="inline-flex items-center gap-3 border-b border-brand-olive text-brand-olive pb-1 text-[11px] uppercase tracking-[0.24em] hover:text-brand-terracotta hover:border-brand-terracotta transition-colors duration-500"
                     >
-                        Read all guides
-                        <ArrowRight size={14} />
-                    </Link>
+                      Read all guides
+                      <ArrowRight size={14} />
+                    </a>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
