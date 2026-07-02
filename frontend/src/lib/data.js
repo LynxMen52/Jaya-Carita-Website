@@ -254,7 +254,7 @@ export const TEAM = [
         role: "Guest Relation Officer",
         bio: "Airbnb operations and client relations. Creating seamless experiences for guests and property owners alike.",
         location: "Canggu",
-        image: "https://res.cloudinary.com/dosi6byip/image/upload/f_auto,q_auto/Bali_gjaqsz",
+        image: "https://res.cloudinary.com/dosi6byip/image/upload/v1782983150/Ratih_pcv1ba.jpg",
     },
     {
         name: "Fany",
