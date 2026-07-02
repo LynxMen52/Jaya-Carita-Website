@@ -250,7 +250,7 @@ export const TEAM = [
         image: "https://res.cloudinary.com/dosi6byip/image/upload/v1781835035/Pak_Wayan_fyvapz.jpg",
     },
     {
-        name: "Ni Rai Ratih",
+        name: "Ratih",
         role: "Guest Relation Officer",
         bio: "Airbnb operations and client relations. Creating seamless experiences for guests and property owners alike.",
         location: "Canggu",
@@ -261,28 +261,28 @@ export const TEAM = [
         role: "Accounting",
         bio: "Financial operations and transaction management. Keeping every payment, record, and detail in perfect order.",
         location: "Canggu",
-        image: "https://res.cloudinary.com/dosi6byip/image/upload/f_auto,q_auto/Bali_gjaqsz",
+        image: "https://res.cloudinary.com/dosi6byip/image/upload/v1782983149/Fany_y5mw5l.jpg",
     },
     {
         name: "Abe",
         role: "Acquisitions Lead",
         bio: "Property sourcing and maintenance coordination. Helping clients find the right opportunities while keeping properties running smoothly.",
         location: "Canggu",
-        image: "https://res.cloudinary.com/dosi6byip/image/upload/f_auto,q_auto/Bali_gjaqsz",
+        image: "https://res.cloudinary.com/dosi6byip/image/upload/v1782983150/Abe_l8gifx.jpg",
     },
     {
-        name: "Theo Sinjal",
+        name: "Theo",
         role: "Marketing and Legal",
         bio: "Marketing strategy and legal affairs. Driving brand growth while ensuring compliance and business integrity.",
         location: "Ubud",
-        image: "https://res.cloudinary.com/dosi6byip/image/upload/f_auto,q_auto/Bali_gjaqsz",
+        image: "https://res.cloudinary.com/dosi6byip/image/upload/v1782983150/Theo_lc052m.jpg",
     },
     {
         name: "Aliyah",
         role: "Marketing",
         bio: "Marketing campaigns and brand communications. Helping businesses connect with the right audience and grow their presence.",
         location: "Ubud",
-        image: "https://res.cloudinary.com/dosi6byip/image/upload/f_auto,q_auto/Bali_gjaqsz",
+        image: "https://res.cloudinary.com/dosi6byip/image/upload/v1782983150/Aliya_ifw5qd.jpg",
     },
 ];
 
